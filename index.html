@@ -12,8 +12,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<title>my.kingdom Website Template | Home :: w3layouts</title>
 		<link href="web/css/style.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
+		<script type="application/x-javascript">
+            addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
 		<script src="web/js/jquery.min.js"></script>
 		<!---webfonts--->
 		<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
@@ -465,7 +466,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    rewindNav : false,
 						    scrollPerPage : false,
 						    pagination : false,
-			    			paginationNumbers: false,
+			    			paginationNumbers: false
 					      });
 					
 					    });
@@ -561,7 +562,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				            step:-1,
 				            onShift:function (i) {
 				                var $current = $('#selector li a[rel=frame_' + i + ']');
-				                $('#selector li a').removeClass('current');
+				                $('#selector').find('li a').removeClass('current');
 				                $current.addClass('current');
 				            }
 				        });
